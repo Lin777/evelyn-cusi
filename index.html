@@ -1,436 +1,1204 @@
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<html lang="en" class="dark">
+
 <head>
-    <title>Portfolio</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio Evelyn Cusi Lopez">
-    <meta name="author" content="3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    <!-- github acitivity css -->
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
-    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"/>
+    <title>Evelyn Cusi López | Lead AI Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --navy-deep: #030712;
+            --navy-lapis: #081849;
+            --cream: #ECDFD2;
+            --grey-cool: #94a3b8;
+            --plum-vivid: #893172;
+            --plum-deep: #5F3475;
+        }
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-</head> 
+        .dark {
+            --bg-primary: var(--navy-deep);
+            --bg-secondary: #050a1f;
+            --text-primary: var(--cream);
+            --text-secondary: var(--grey-cool);
+            --accent: var(--plum-vivid);
+            --card-bg: rgba(8, 24, 73, 0.2);
+            --border: rgba(255, 255, 255, 0.05);
+            --modal-overlay: rgba(0, 0, 0, 0.90);
+        }
 
-<body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="assets/images/profile.png" alt="Evelyn Cusi Lopez" />
-            <div class="profile-content pull-left header-content">
-                <h1>Hello I'm <span id="mainTitle"></span></h1>
-                <h2 class="desc">Data scientist / Software engineer</h2>
-                <ul class="social list-inline">
-                    <li><a href="https://github.com/Lin777" target="_blank"><i class="fa fa-github-alt"></i></a></li>
-                    <li><a href="https://bo.linkedin.com/in/evelyn-cusi-lopez" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://twitter.com/CLEvelyn_16" target="_blank"><i class="fa fa-twitter"></i></a></li>                   
-                    <li><a href="https://es-la.facebook.com/evelyn.cusilopez" target="_blank"><i class="fa fa-facebook"></i></a></li>      
-                    <li><a href="https://www.youtube.com/channel/UCvaj8w_rfzWvvR9ORewy12w" target="_blank"><i class="fa fa-youtube"></i></a></li>              
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="https://drive.google.com/file/d/1ClpzHt-iunDsfJujnCAfDJdha9ssLFmS/view?usp=sharing" target="_blank"><i class="fa fa-download"></i> Download CV</a>              
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-md-8 col-sm-12 col-xs-12">
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>Hi, I'm Evelyn, I'm currently a Data Scientist at project44. 
-                                <br> <br>
-                                In my university years I was part of <b>"Creation of an Early Warning System of Fires using drones (2015)"</b> 
-                                project directed by Eduardo Di Santi PhD, this experience ignited my passion for AI, as we 
-                                created an image fire detection tool using SVM and of course a lot of image analysis and processing;
-                                 also I was part of the <b>GSoC (Google Summer of Code) program</b>
-                                 in 2019 for the Pharo Consortium, where I learned teamwork skills, and improved my development skills.
-                               <br> <br>In 2020 I made a system of <b>"Driving anomaly detection"</b> 
-                                using a simple Neural Network and Isolation Forest, which was my project to opt for the degree in System 
-                                Engineering where I graduated with honors. 
-                                <br> <br>Later I participated in a project to create a 
-                                <b>Genetic Algorithm to generate unit tests automatically for programs written in Smalltalk</b>, this project was used to carry out different 
-                                experiments to publish papers in different scientific journals like ACM and IEEE.
-                                
-                            </p>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-    
-                
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Experience</h2>
-                        <div class="content">
-                            
-                            <div class="item">
-                                <h3 class="title">Data Scientist - <span class="place"><a href="https://www.project44.com/" target="_blank">project44</a></span> <span class="year">(August 2021 – Current)</span></h3>
-                                <ul>
-                                    <li>Build predictive models using machine learning tools to predict ETA and ETD (Estimate
-                                        Time of Arrival and Estimate Time of Departure).
-                                        <ul>
-                                            <li>Data cleaning and preparation:
-                                                <ul>
-                                                    <li>Design algorithms/heuristics to detect anomalies in tracking data: GPS signals, ETA and ETD.</li>
-                                                    <li>Data visualization, the main tools used were: matplotlib, seaborn, folium and kepler. </li>
-                                                    <li>Data augmentation.</li>
-                                                </ul>
-                                            <li>Train and evaluate the model, mainly used algorithms were CatBoost and XGBoost.</li>
-                                            <li>Develop automatic reports of model’s performance, using AWS and Jenkins.</li>
-                                          </ul>
-                                    </li>
-                                    <li>Improve data quality for a p44’s own reverse geocoding system.
-                                        <ul>
-                                            <li>Collect external and internal data (using snowflake/SQL).</li>
-                                            <li>Analyze data.</li>
-                                        </ul>
-                                    </li>
-                                    <li>Perform analysis based on historical data, to improve hyperparameters in pre-existing ML systems.</li>
-                                </ul>
-                            </div><!--//item-->
-                            
-                            <div class="item">
-                                <h3 class="title">Mentor - <span class="place"><a href="https://summerofcode.withgoogle.com/projects/#6095801345900544" target="_blank">Google Summer of Code 2021 - Pharo Consortium</a></span> <span class="year">(May 2021 – July 2021)</span></h3>
-                                <p>Mentoring of the <b>Refining Code Critics</b> project of Alejandra Cossio student, for Pharo Consortium</p>
-                            </div><!--//item-->
+        .light {
+            --bg-primary: #FCF8F4;
+            --bg-secondary: #F4EBE2;
+            --text-primary: var(--navy-deep);
+            --text-secondary: #475569;
+            --accent: var(--plum-deep);
+            --card-bg: rgba(255, 255, 255, 0.6);
+            --border: rgba(0, 0, 0, 0.05);
+            --modal-overlay: rgba(3, 7, 18, 0.45);
+            /* más claro en light */
+        }
 
-                            <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place">SEMANTICS S.R.L.</span> <span class="year">(August 2018 – July 2021)</span></h3>
-                                <ul>
-                                    <li>Develop web page for registration to ESUG Conference 2019.</li>
-                                    <li>Train junior engineers.</li>
-                                    <li>Develop, improve, manage and support SmallSuiteGenerator (Smalltalk tool to generate test cases automatically using Genetic Algorithms).</li>
-                                    <li>Develop and improve Refactoring tools for <a href="https://pharo.org/" target="_blank">Pharo consorsium</a>.</li>
-                                </ul>   
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Engineer - <span class="place"><a href="https://summerofcode.withgoogle.com/archive/2019/projects/6072619529404416/" target="_blank">Google Summer of Code - Pharo Consortium</a></span> <span class="year">(May 2019 – August 2019)</span></h3>
-                                <p>I made contributions to Pharo 8, among the main contributions are:</p>
-                                <ul>
-                                    <li>Fix refactoring issues.</li>
-                                    <li>Improve existing refactorings.</li>
-                                    <li>Add new refactorings.</li>
-                                </ul>
-                                <p>Summary website: <a href="https://lin777.github.io/gsoc2019/" target="_blank">https://lin777.github.io/gsoc2019/</a></p>
-                            </div><!--//item-->
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            transition: all 0.5s ease;
+            overflow-x: hidden;
+        }
 
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-                
-                <section class="projects section">
-                    <div class="section-inner">
-                        <h2 class="heading">Achievements</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="https://dl.acm.org/doi/abs/10.1007/s10664-022-10220-8" target="_blank">TestEvoViz: visualizing genetically-based test coverage evolution (December 2022)</a> <span class="label label-theme">Empirical Software Engineering</span></h3>
-                                <p class="summary">This paper presents TestEvoViz, a visual technique to introspect genetic algorithm-based test generation processes. TestEvoViz offers the practitioners a visual support to expose the process and decisions made by the generation algorithm. We first present a number of case studies to illustrate the expressiveness of TestEvoViz... </p>
-                                <p><a class="more-link" href="https://dl.acm.org/doi/abs/10.1007/s10664-022-10220-8" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                            </div>
-                            <div class="item">
-                                <h3 class="title"><a href="https://ieeexplore.ieee.org/document/9240486" target="_blank">TestEvoViz: Visual Introspection for Genetically-Based Test Coverage Evolution (September 2020)</a> <span class="label label-theme">VISSOFT</span></h3>
-                                <p class="summary">Genetic algorithms are an efficient mechanism to generate unit tests. Automatically generated unit tests are known to be an important asset to identify software defects and define oracles. However, configuring the test generation is a tedious activity for a practitioner due to the inherent difficulty to adequately tuning the generation process...</p> 
-                                <p><a class="more-link" href="https://ieeexplore.ieee.org/document/9240486" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="http://www.revistasbolivianas.org.bo/scielo.php?script=sci_arttext&pid=S2306-05222016000100013&lng=es&nrm=iso" target="_blank">Visual automatic fire detection through the Histogram of Oriented Gradients and Support Vector Machine (October 2016)</a><span class="label label-theme">Scielo</span></h3>
-                                <p class="summary">The visual detection of objects in digital images, is one ofthe challenging issues in Computer Science, especially ifthose objects do not have a definite shape, as in the case offire. To meet the challenge, it is necessary to use techniques Computer Vision and Machine Learning, so that the results are approximate as much as possible, to the human visual system. Given a digital image, with the aim of identifying areas where fire there, the computer should locate exactly the same areas as a human would... </p>
-                                <p><a class="more-link" href="http://www.revistasbolivianas.org.bo/scielo.php?script=sci_arttext&pid=S2306-05222016000100013&lng=es&nrm=iso" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                            </div><!--//item-->
-                            <!--<a class="btn btn-cta-secondary" href="#">More on CoderWall <i class="fa fa-chevron-right"></i></a>
-                            -->
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-                
-               <section class="latest section">
-                <div class="section-inner">
-                    <h2 class="heading">Latest Projects</h2>
-                    <div class="content"> 
+        h1,
+        h2,
+        h3,
+        .font-heading {
+            font-family: 'Outfit', sans-serif;
+        }
 
-                        <div class="item row">
-                            <a class="col-md-4 col-sm-4 col-xs-12" href="https://medium.com/saturdays-ai/clasificaci%C3%B3n-de-idiomas-originarios-de-bolivia-91cb0c0b7b48" target="_blank">
-                            <img class="img-responsive project-image" src="assets/images/projects/idiomas.png" alt="project name" />
-                            </a>
-                            <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                <h3 class="title"><a href="https://medium.com/saturdays-ai/clasificaci%C3%B3n-de-idiomas-originarios-de-bolivia-91cb0c0b7b48" target="_blank">Classification of native languages of Bolivia</a></h3>
-                                <p>The objective of this project is to create a language classification tool, which, although it is a simple task, 
-                                    is elementary to carry out more complex tasks such as automatic translation, sentiment analysis, speech to text, 
-                                    text to speech conversion, etc.</p>
-                                <p><a class="more-link" href="https://medium.com/saturdays-ai/clasificaci%C3%B3n-de-idiomas-originarios-de-bolivia-91cb0c0b7b48" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                            </div><!--//desc-->                          
-                        </div><!--//item-->
+        section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 8rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
 
-                        <div class="item row">
-                            <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/Lin777/PythonAndOtherTools" target="_blank">
-                            <img class="img-responsive project-image" src="assets/images/projects/python.png" alt="project name" />
-                            </a>
-                            <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                <h3 class="title"><a href="https://github.com/Lin777/PythonAndOtherTools" target="_blank">Python Roadmap</a></h3>
-                                <p>The purpose of this project is to trace a learning path from scratch to become an AI expert, with this I hope to help many others to take the first step in this fascinating area.</p>
-                                <p><a class="more-link" href="https://github.com/Lin777/PythonAndOtherTools" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                            </div><!--//desc-->                          
-                        </div><!--//item-->
-                        
-                        <div class="item row">
-                            <a class="col-md-4 col-sm-4 col-xs-12" href="https://drive.google.com/file/d/1tjGeub7tz6s7ytVpcz8MljulSwc2WNBc/view?usp=sharing" target="_blank">
-                            <img class="img-responsive project-image" src="assets/images/projects/app.png" alt="project name" />
-                            </a>
-                            <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                <h3 class="title"><a href="https://drive.google.com/file/d/1tjGeub7tz6s7ytVpcz8MljulSwc2WNBc/view?usp=sharing" target="_blank">Driving Anomaly Detection</a></h3>
-                                <p>This paper describes the development of a mechanism to detect driving anomalies, which is
-                                    implemented using a mobile device and Machine Learning techniques.
-                                    The objective is create a tool capable to find anomalous behaviors in the driving of human or
-                                    autonomous agent...</p>
-                                <p><a class="more-link" href="https://drive.google.com/file/d/1tjGeub7tz6s7ytVpcz8MljulSwc2WNBc/view?usp=sharing" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                            </div><!--//desc-->                          
-                        </div><!--//item-->
-                        
-                        
-                    </div><!--//content-->  
-                </div><!--//section-inner-->                 
-            </section><!--//section-->
+        .btn-accent {
+            background-color: var(--accent);
+            color: white;
+            border-radius: 99px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .btn-accent:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px -10px var(--accent);
+        }
+
+        .glass {
+            background: var(--card-bg);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .glass:hover {
+            border-color: var(--accent);
+            background: rgba(137, 49, 114, 0.05);
+        }
+
+        .lang-en [data-lang="es"],
+        .lang-es [data-lang="en"] {
+            display: none;
+        }
+
+        .profile-frame {
+            position: relative;
+            width: 370px;
+            height: 370px;
+            border-radius: 50%;
+            border: 8px solid var(--accent);
+            padding: 12px;
+            background: var(--bg-primary);
+            box-shadow: 0 0 60px rgba(137, 49, 114, 0.2);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .name-hero {
+            font-size: clamp(3.5rem, 12vw, 8.5rem);
+            line-height: 0.85;
+            font-weight: 800;
+            letter-spacing: -0.05em;
+        }
+
+        .lastname-hero {
+            font-size: clamp(1.8rem, 6vw, 4rem);
+            font-weight: 300;
+            color: var(--accent);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom Scrollbar */
+        .custom-scroll::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 10px;
+        }
+
+        /* Floating Chips */
+        .chip {
+            position: absolute;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            padding: 0.8rem 1.4rem;
+            border-radius: 1.2rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            animation: float 6s ease-in-out infinite;
+            z-index: 20;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Perspective Grid Images */
+        .perspective-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 2rem;
+            transition: all 0.5s ease;
+        }
+
+        .perspective-card:hover .perspective-img {
+            transform: scale(1.05);
+        }
+
+        /* Carousel Structure */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            gap: 2rem;
+        }
+
+        .impact-card {
+            flex: 0 0 100%;
+            /* Mobile: 1 card */
+        }
+
+        @media (min-width: 768px) {
+            .impact-card {
+                flex: 0 0 calc(50% - 1rem);
+            }
+
+            /* Tablet: 2 cards */
+        }
+
+        @media (min-width: 1024px) {
+            .impact-card {
+                flex: 0 0 calc(33.333% - 1.35rem);
+            }
+
+            /* Desktop: 3 cards */
+        }
+
+        /* Timeline */
+        .timeline-line {
+            position: relative;
+        }
+
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, var(--accent), transparent);
+        }
+
+        /* Floating Chips */
+        .chip {
+            position: absolute;
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            padding: 0.8rem 1.4rem;
+            border-radius: 1.2rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            animation: float 6s ease-in-out infinite;
+            z-index: 20;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        /* Estilos del Formulario */
+        input,
+        textarea {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--text-primary);
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border-radius: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input:focus,
+        textarea:focus {
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        ::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Modal: en hover NO oscurecer (mantener fondo), solo “glow” del borde */
+        .modal-glass:hover {
+            background: var(--card-bg);
+            /* mantiene el fondo del tema */
+            border-color: var(--accent);
+            /* solo brilla el borde */
+        }
+    </style>
+</head>
+
+<body class="lang-en">
+
+    <!-- Navbar -->
+    <header class="fixed w-full z-50 py-6 px-8 md:px-16 transition-all border-b border-transparent" id="navbar">
+        <div class="max-w-[1400px] mx-auto flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter">
+                Evelyn<span style="color: var(--accent)">C</span>L
+            </div>
+
+            <nav class="hidden lg:flex gap-10 text-[11px] font-bold uppercase tracking-[0.2em] opacity-60">
+                <a href="#hero" class="hover:text-[var(--accent)] transition-all">Home</a>
+                <a href="#experience" class="hover:text-[var(--accent)] transition-all"><span
+                        data-lang="en">Career</span><span data-lang="es">Trayectoria</span></a>
+                <a href="#impact" class="hover:text-[var(--accent)] transition-all"><span
+                        data-lang="en">Impact</span><span data-lang="es">Impacto</span></a>
+                <a href="#skills" class="hover:text-[var(--accent)] transition-all"><span
+                        data-lang="en">Skills</span><span data-lang="es">Habilidades</span></a>
+                <a href="#certifications" class="hover:text-[var(--accent)] transition-all"><span
+                        data-lang="en">Certifications</span><span data-lang="es">Certificaciones</span></a>
+                <a href="#life" class="hover:text-[var(--accent)] transition-all"><span data-lang="en">Life</span><span
+                        data-lang="es">Vida</span></a>
+            </nav>
+
+            <div class="flex items-center gap-6">
+                <div class="hidden md:flex items-center gap-3 mr-4 border-r border-white/10 pr-4">
+                    <a href="https://github.com/lin777" target="_blank"
+                        class="opacity-60 hover:opacity-100 hover:text-[var(--accent)] transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                            </path>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/evelyn-cusi-lopez" target="_blank"
+                        class="opacity-60 hover:opacity-100 hover:text-[var(--accent)] transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                </div>
+                <a href="#"
+                    class="hidden md:flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest hover:text-[var(--accent)] transition-all">
+                    <a href="https://drive.google.com/file/d/14677F15ukAgBvAIbayIFWmPzbnL0IvQn/view?usp=drive_link"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-[var(--border)] hover:border-[var(--accent)] transition-all">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+
+                        <span data-lang="en">Download CV</span><span data-lang="es">Descargar CV</span>
+                    </a>
+                    <button onclick="toggleTheme()" class="p-2 opacity-60 hover:opacity-100 transition-opacity">
+                        <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <button onclick="toggleLang()"
+                        class="text-[10px] font-bold px-4 py-2 border border-current rounded-full hover:bg-[var(--accent)] hover:border-transparent transition-all">
+                        <span id="lang-label">ES</span>
+                    </button>
+            </div>
+        </div>
+    </header>
 
 
-                <!--section class="github section">
-                    <div class="section-inner">
-                        <h2 class="heading">My GitHub</h2>
-                            <div class="img-responsive calendar">
-                                Loading the data just for you.
-                            </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="grid lg:grid-cols-2 gap-20 items-center w-full">
+            <div class="reveal">
+                <p class="text-[var(--accent)] font-bold tracking-[0.5em] uppercase text-[18px] mb-8">Data Scientist /
+                    AI Engineer</p>
+                <h1 class="mb-10">
+                    <span class="name-hero">EVELYN</span><br>
+                    <span class="lastname-hero">CUSI LÓPEZ</span>
+                </h1>
+                <p class="text-xl md:text-2xl opacity-70 mb-12 max-w-xl leading-relaxed font-light">
+                    <span data-lang="en">I specialize in building production-ready AI systems that drive real business
+                        results. From Computer Vision to Large Language Models.</span>
+                    <span data-lang="es">Me especializo en construir sistemas de IA listos para producción que impulsan
+                        resultados de negocio reales. Desde Visión Artificial hasta LLMs.</span>
+                </p>
+                <div class="flex flex-wrap gap-6">
+                    <a href="#contact" class="btn-accent px-12 py-5 font-bold text-sm">
+                        <span data-lang="en">Get in touch</span><span data-lang="es">Hablemos</span>
+                    </a>
+                    <a href="https://drive.google.com/file/d/14677F15ukAgBvAIbayIFWmPzbnL0IvQn/view?usp=drive_link"
+                        target="_blank" rel="noopener noreferrer"
+                        class="glass px-10 py-4 font-bold text-sm flex items-center gap-3 border-white/10 hover:border-[var(--accent)] transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        <span data-lang="en">Download CV</span><span data-lang="es">Descargar CV</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center items-center reveal" style="transition-delay: 0.2s">
+                <div class="profile-frame">
+                    <img src="assets/images/evelyn_cusi.jpeg" alt="Evelyn Cusi López" class="profile-img">
+                </div>
+                <!-- Interactive Chips -->
+                <div class="chip top-0 right-10" style="animation-delay: 0s">⚡ GenAI & Agents</div>
+                <div class="chip top-40 -left-12" style="animation-delay: 2s">👁️ Document AI</div>
+                <div class="chip bottom-10 right-0" style="animation-delay: 4s">🚀 Production MLOps</div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Story Section (Experience Timeline) -->
+    <section id="experience" class="bg-[var(--bg-secondary)] rounded-[4rem] my-10">
+        <div class="w-full">
+            <h2 class="text-5xl md:text-7xl font-bold mb-20 reveal">The Technical <span
+                    style="color: var(--accent)">Story</span></h2>
+
+            <div class="timeline-line space-y-12 max-w-5xl mx-auto">
+                <!-- Exp 1 -->
+                <div class="relative pl-12 reveal">
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-[var(--bg-primary)] border-4 border-[var(--accent)] rounded-full z-10">
                     </div>
-                </section> <!--//section-->
-            </div><!--//primary-->
-            <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                 <aside class="info aside section">
-                    <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Berlin, Germany</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">cusi.evelyn@gmail.com</a></li>
-                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="https://lin777.github.io/evelyn-cusi/">https://lin777.github.io/evelyn-cusi/</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Skills</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>Platforms: </strong></span>
-                                    <span class="level">Windows, Linux (Ubuntu, Arch and Debian) and Mac OS. <br class="visible-xs"/></span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Languages: </strong></span>
-                                    <span class="level">Python, SQL, Smalltalk, Java, Android and PHP.<br class="visible-sm visible-xs"/></span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Tools: </strong></span>
-                                    <span class="level">Matplotlib, Seaborn, Pandas, Dask, Numpy, Folium, Geopandas, Jupyter, Scikit-learn, Tensorflow, 
-                                        Github, Bitbucket, Jenkins, AWS, Snowflake, Docker,
-                                         Djongo, Django, OpenCV, Pharo, VisualWorks,
-                                        Octave, Magrite and Selenium.<br class="visible-sm visible-xs"/></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//section-->
-                
-                <!--<aside class="testimonials aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Testimonials</h2>
-                        <div class="content">
-                            <div class="item">
-                                <blockquote class="quote">                                  
-                                    <p><i class="fa fa-quote-left"></i>Evelyn is an excellent software engineer and she is passionate about what she does. You can totally count on her to deliver your projects!</p>
-                                </blockquote>                
-                                <p class="source"><span class="name">Tim Adams</span><br /><span class="title">Curabitur commodo</span></p>                                                             
+                    <div class="glass p-10 group hover:translate-x-4 transition-transform">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                            <div>
+                                <h3 class="text-3xl font-bold">Lead AI Engineer & Data Scientist</h3>
+                                <p class="text-[var(--accent)] font-bold tracking-widest text-xs uppercase mt-1">Datec
+                                    LATAM - D4G | 2023 - 2025</p>
                             </div>
-                            
-                            <p><a class="more-link" href="https://bo.linkedin.com/in/evelyn-cusi-lopez" target="_blank"><i class="fa fa-external-link"></i> More on Linkedin</a></p> 
-                            
+                            <button onclick="openModal('exp-datec')"
+                                class="btn-accent px-6 py-2 text-[10px] font-bold uppercase tracking-widest">
+                                <span data-lang="en">Deep Dive</span><span data-lang="es">Ver Detalles</span>
+                            </button>
+                        </div>
+                        <p class="opacity-60 leading-relaxed max-w-3xl" data-lang="en">Leading the design and delivery
+                            of production AI systems. From Document AI pipelines to enterprise RAG platforms serving
+                            300+ users.</p>
+                        <p class="opacity-60 leading-relaxed max-w-3xl" data-lang="es">Liderando el diseño y la entrega
+                            de sistemas de IA en producción. Desde pipelines de Document AI hasta plataformas RAG para
+                            más de 300 usuarios.</p>
+                    </div>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="relative pl-12 reveal" style="transition-delay: 0.1s">
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-[var(--bg-primary)] border-4 border-[var(--accent)] rounded-full z-10 opacity-50">
+                    </div>
+                    <div class="glass p-10 group hover:translate-x-4 transition-transform">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                            <div>
+                                <h3 class="text-3xl font-bold">Data Scientist</h3>
+                                <p class="text-[var(--accent)] font-bold tracking-widest text-xs uppercase mt-1">
+                                    Project44 (Germany) | 2021 - 2023</p>
+                            </div>
+                            <button onclick="openModal('exp-p44')"
+                                class="btn-accent px-6 py-2 text-[10px] font-bold uppercase tracking-widest">
+                                <span data-lang="en">Deep Dive</span><span data-lang="es">Ver Detalles</span>
+                            </button>
+                        </div>
+                        <p class="opacity-60 leading-relaxed max-w-3xl" data-lang="en">Optimized global logistics
+                            visibility. Improved ETA accuracy by 21% and replaced high-cost APIs with in-house
+                            geospatial solutions.</p>
+                        <p class="opacity-60 leading-relaxed max-w-3xl" data-lang="es">Optimización de visibilidad
+                            logística global. Mejora de la precisión de ETA en un 21% y reemplazo de APIs costosas por
+                            soluciones geoespaciales propias.</p>
+                    </div>
+                </div>
+
+                <!-- Exp 3 -->
+                <div class="relative pl-12 reveal" style="transition-delay: 0.2s">
+                    <div
+                        class="absolute left-0 top-1 w-10 h-10 bg-[var(--bg-primary)] border-4 border-[var(--accent)] rounded-full z-10 opacity-20">
+                    </div>
+                    <div class="glass p-10 group hover:translate-x-4 transition-transform">
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                            <div>
+                                <h3 class="text-3xl font-bold">Software Engineer</h3>
+                                <p class="text-[var(--accent)] font-bold tracking-widest text-xs uppercase mt-1">
+                                    Semantics S.R.L. | 2018 - 2021</p>
+                            </div>
+                            <button onclick="openModal('exp-semantics')"
+                                class="btn-accent px-6 py-2 text-[10px] font-bold uppercase tracking-widest">
+                                <span data-lang="en">Deep Dive</span><span data-lang="es">Ver Detalles</span>
+                            </button>
+                        </div>
+                        <p class="opacity-60 leading-relaxed max-w-3xl" data-lang="en">Building the foundation of
+                            scalable systems. Focused on backend tools, genetic algorithms, and Agile/TDD practices.</p>
+                        <p class="opacity-60 leading-relaxed max-w-3xl" data-lang="es">Construyendo la base de sistemas
+                            escalables. Enfocada en herramientas backend, algoritmos genéticos y prácticas Agile/TDD.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Carousel Section -->
+    <section id="impact">
+        <div class="w-full">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 reveal">
+                <div>
+                    <h2 class="text-5xl md:text-7xl font-bold mb-4">Featured <span
+                            style="color: var(--accent)">Impact</span></h2>
+                    <p class="opacity-50 text-xl font-light">Production-grade solutions that drive measurable business
+                        value.</p>
+                </div>
+                <!-- Navigation Arrows -->
+                <div class="flex gap-4">
+                    <button onclick="moveCarousel(-1)"
+                        class="w-14 h-14 glass rounded-full flex items-center justify-center hover:border-[var(--accent)] group transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" class="opacity-40 group-hover:opacity-100">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button onclick="moveCarousel(1)"
+                        class="w-14 h-14 glass rounded-full flex items-center justify-center hover:border-[var(--accent)] group transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" class="opacity-40 group-hover:opacity-100">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Carousel Component -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="impactTrack">
+                    <!-- Original Items -->
+                    <div class="impact-card glass p-10 flex flex-col justify-between reveal">
+                        <div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-[var(--accent)] mb-4 block">Document
+                                Intelligence</span>
+                            <h4 class="text-2xl font-bold mb-6">Automated Data Extraction</h4>
+                            <p class="text-sm opacity-60 mb-8" data-lang="en">Pipeline combining YOLOX, OCR, and LLMs
+                                deployed on GCP to automate operational document processing.</p>
+                            <p class="text-sm opacity-60 mb-8" data-lang="es">Pipeline combinando YOLOX, OCR y LLMs en
+                                GCP para automatizar el procesamiento de documentos operativos.</p>
+                        </div>
+                        <div class="pt-8 border-t border-white/5 flex justify-between items-end">
+                            <div class="text-4xl font-extrabold text-[var(--accent)]">90%</div>
+                            <div class="text-[9px] uppercase font-bold opacity-40">Auto Processing</div>
                         </div>
                     </div>
-                </aside><!-->
-                
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> BSc in System Engineering</h3>
-                                <h4 class="university">Mayor de San Simón University, Bolivia<span class="year"> (2013-2020)</span></h4>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> High School</h3>
-                                <h4 class="university">Suizo Alemán School, Bolivia<span class="year"> (2000-2012)</span></h4>
-                            </div><!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>Spanish:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="credits aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Latest Blog Posts</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class='fa fa-file-text'></i><a href="https://medium.com/saturdays-ai/clasificaci%C3%B3n-de-idiomas-originarios-de-bolivia-91cb0c0b7b48" target="_blank"> Classification of native languages of Bolivia</a></li>
-                                <li><i class='fa fa-file-text'></i><a href="https://cusi-evelyn.medium.com/introduced-refactorings-in-pharo-9-9c7274b68b22" target="_blank"> New refactorings for Pharo 9</a></li>
-                                <li><i class='fa fa-file-text'></i><a href="https://cusi-evelyn.medium.com/better-and-more-refactorings-for-pharo-part-1-d79da98b4569" target="_blank"> Better and more refactorings for Pharo</a></li>
-                                <li><i class='fa fa-file-text'></i></i><a href="https://cusi-evelyn.medium.com/pruebas-funcionales-con-parasol-9af6c9c2bdcf" target="_blank"> Pruebas funcionales con Parasol</a></li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="list music aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Favorite coding music</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-headphones"></i> <a href="https://youtu.be/jT5XKhWRSwo" target="_blank">Imagine Dragons - On Top Of The World</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="https://youtu.be/UwxatzcYf9Q" target="_blank">Howl's Moving Castle [OST - Theme Song]</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="https://youtu.be/3In8VPzZwAE" target="_blank">Aqualung - Brighter Than Sunshine</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="https://youtu.be/EDOtIY7fEjs" target="_blank">Queen & David Bowie - Under Pressure</a></li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="list conferences aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Conferences</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-calendar"></i> <a href="#" target="_blank">CCBOL 2016</a> (La Paz, Bolivia)</li>
-                            </ul>
-                        </div><!--//content-->
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-calendar"></i> <a href="#" target="_blank">I FERIA NACIONAL DE SOCIEDADES CIENTÍFICAS DE ESTUDIANTES DEL SISTEMA DE LA UNIVERSIDAD BOLIVIANA</a> (La Paz, Bolivia)</li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="credits aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Complementary courses</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><a href="https://www.linkedin.com/learning/certificates/7acf92b7b534736a39b5a4e58881588070b31ee47e9e40677ccb496d854c6e3a" target="_blank"><i class="fa fa-external-link"></i> Storytelling for Data and Design - Linkedin Learning.</a></li>
-                                <li><a href="https://drive.google.com/file/d/1P0n5YtYr69xlDpEyht_DPJuBiylgUchm/view?usp=sharing" target="_blank"><i class="fa fa-external-link"></i> Machine Learning, AI Saturdays - La Paz.</a></li>
-                                <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/UX8C5T67AX6R" target="_blank"><i class="fa fa-external-link"></i> Specialization Deep Learning, Coursera.</a></li>
-                                <li><a href="https://www.coursera.org/account/accomplishments/certificate/CCZ8EMZZEH9B" target="_blank"><i class="fa fa-external-link"></i> IA para todos, Coursera.</a></li>
-                                <li><a href="https://www.coursera.org/account/accomplishments/specialization/certificate/YZGNW92QYVQ8" target="_blank"><i class="fa fa-external-link"></i> Specialization Mathematics for Machine Learning, Coursera.</a></li>
-                                <li><a href="https://www.kaggle.com/learn/certification/lin777ecl/python" target="_blank"><i class="fa fa-external-link"></i> Python Kaggle Micro-course, Kaggle.</a></li>
-                                
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
 
-                <aside class="credits aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Awards</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><a href="https://drive.google.com/file/d/1FeqNJdHuPry1XV966OZuKluAN1YCUvJF/view?usp=sharing" target="_blank"><i class="fa fa-external-link"></i> Project highlighted in the AI Saturdays program - First place.</a></li>
-                                
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
+                    <div class="impact-card glass p-10 flex flex-col justify-between reveal">
+                        <div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-[var(--accent)] mb-4 block">Retail
+                                & Logistics</span>
+                            <h4 class="text-2xl font-bold mb-6">SKU Demand Forecasting</h4>
+                            <p class="text-sm opacity-60 mb-8" data-lang="en">Time-series forecasting for 500+ SKUs on
+                                Databricks using PySpark and MLflow for automated purchasing.</p>
+                            <p class="text-sm opacity-60 mb-8" data-lang="es">Predicción de demanda para +500 SKUs en
+                                Databricks usando PySpark y MLflow para compras automatizadas.</p>
+                        </div>
+                        <div class="pt-8 border-t border-white/5 flex justify-between items-end">
+                            <div class="text-4xl font-extrabold text-[var(--accent)]">500+</div>
+                            <div class="text-[9px] uppercase font-bold opacity-40">Active SKUs</div>
+                        </div>
+                    </div>
 
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">3rd Wave Media</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
- 
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-min.js"></script>
-    <script type="text/javascript" src="assets/plugins/jquery-migrate-min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script> 
-    <script src="assets/js/jquery.min.js"></script>
-    <!-- Prepare a container for your calendar. -->
-    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="assets/js/typed.js" type="text/javascript"></script>
-<script type="text/javascript">
-    $(function(){
-      $("#mainTitle").typed({
-        strings: ["Evelyn Cusi", "Data Scientist", "Software engineer", "Freelancer"],
-        typeSpeed: 150, // typing speed
-        loop: true,
-      });
-  });
+                    <div class="impact-card glass p-10 flex flex-col justify-between reveal">
+                        <div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-[var(--accent)] mb-4 block">Generative
+                                AI</span>
+                            <h4 class="text-2xl font-bold mb-6">Enterprise RAG Platform</h4>
+                            <p class="text-sm opacity-60 mb-8" data-lang="en">Production RAG platform using LangChain
+                                and vector databases, enabling internal knowledge access.</p>
+                            <p class="text-sm opacity-60 mb-8" data-lang="es">Plataforma RAG en producción usando
+                                LangChain y bases de datos vectoriales para acceso a conocimiento interno.</p>
+                        </div>
+                        <div class="pt-8 border-t border-white/5 flex justify-between items-end">
+                            <div class="text-4xl font-extrabold text-[var(--accent)]">300+</div>
+                            <div class="text-[9px] uppercase font-bold opacity-40">Internal Users</div>
+                        </div>
+                    </div>
 
-</script>
+                    <div class="impact-card glass p-10 flex flex-col justify-between reveal">
+                        <div>
+                            <span
+                                class="text-[10px] font-bold uppercase tracking-widest text-[var(--accent)] mb-4 block">Supply
+                                Chain</span>
+                            <h4 class="text-2xl font-bold mb-6">ETA Prediction Engine</h4>
+                            <p class="text-sm opacity-60 mb-8" data-lang="en">Global logistics engine improved through
+                                real-time GPS data cleansing and geospatial modeling.</p>
+                            <p class="text-sm opacity-60 mb-8" data-lang="es">Motor logístico global mejorado mediante
+                                limpieza de datos GPS en tiempo real y modelado geoespacial.</p>
+                        </div>
+                        <div class="pt-8 border-t border-white/5 flex justify-between items-end">
+                            <div class="text-4xl font-extrabold text-[var(--accent)]">21%</div>
+                            <div class="text-[9px] uppercase font-bold opacity-40">Accuracy Gain</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<script>
-    new GitHubCalendar(".calendar", "lin777", { responsive: true });
-</script>
-           
+
+    <!-- Expertise Stack (New UI) -->
+    <section id="skills" class="bg-[var(--bg-secondary)] rounded-[4rem] my-10">
+        <div class="w-full">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal">
+                <div>
+                    <h2 class="text-5xl md:text-7xl font-bold mb-4">Expertise <span
+                            style="color: var(--accent)">Stack</span></h2>
+                    <p class="opacity-50 text-xl font-light">The technical foundation behind every solution.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- AI Core -->
+                <div class="glass p-12 reveal">
+                    <div class="mb-8">
+                        <h4 class="text-[var(--accent)] font-bold text-xs uppercase tracking-widest mb-2">01. AI &
+                            Machine Learning</h4>
+                        <p class="text-2xl font-bold">Intelligence Core</p>
+                    </div>
+                    <div class="space-y-4 text-sm opacity-70">
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-[var(--accent)]"></span>
+                            <span>GenAI: LangGraph, RAG, LLM Ops</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-[var(--accent)]"></span>
+                            <span>CV: YOLOX, OpenCV, Document AI</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-[var(--accent)]"></span>
+                            <span>PyTorch, TensorFlow, Scikit-Learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering -->
+                <div class="glass p-12 reveal" style="transition-delay: 0.1s">
+                    <div class="mb-8">
+                        <h4 class="text-[var(--accent)] font-bold text-xs uppercase tracking-widest mb-2">02.
+                            Engineering</h4>
+                        <p class="text-2xl font-bold">Scalable Backend</p>
+                    </div>
+                    <div class="space-y-4 text-sm opacity-70">
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-[var(--accent)]"></span>
+                            <span>FastAPI, Flask, Django (Python)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-[var(--accent)]"></span>
+                            <span>Docker, Jenkins, CI/CD Pipelines</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-[var(--accent)]"></span>
+                            <span>TDD & Clean Architecture</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data & Cloud -->
+                <div class="glass p-12 reveal" style="transition-delay: 0.2s">
+                    <div class="mb-8">
+                        <h4 class="text-[var(--accent)] font-bold text-xs uppercase tracking-widest mb-2">03. Platforms
+                        </h4>
+                        <p class="text-2xl font-bold">Cloud & Big Data</p>
+                    </div>
+                    <div class="space-y-4 text-sm opacity-70">
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-[var(--accent)]"></span>
+                            <span>GCP (Vertex AI), AWS, Databricks</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-[var(--accent)]"></span>
+                            <span>Snowflake, BigQuery, MLflow</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="w-2 h-2 rounded-full bg-[var(--accent)]"></span>
+                            <span>PySpark & Distributed Computing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications (New UI) -->
+    <section id="certifications">
+        <div class="w-full">
+            <h2 class="text-5xl md:text-7xl font-bold mb-4">Verified <span style="color: var(--accent)">Impact</span>
+            </h2>
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="space-y-4 reveal">
+                    <h3 class="text-xs font-bold uppercase tracking-widest opacity-40 mb-8">Selected Certifications</h3>
+                    <!-- Cert Item -->
+                    <a href="https://credentials.databricks.com/7499ceae-9600-4ee9-8f4b-c2e7e15d21ff#acc.Vd67azfG"
+                        target="_blank" rel="noopener noreferrer"
+                        class="flex items-center justify-between p-6 border-b border-[var(--border)] hover:bg-white/5 transition-all group">
+
+                        <div>
+                            <p class="font-bold text-lg group-hover:text-[var(--accent)] transition-colors">Databricks
+                                Machine Learning Associate</p>
+                            <p class="text-xs opacity-50 uppercase tracking-widest">Databricks | 2025</p>
+                        </div>
+                        <svg class="opacity-0 group-hover:opacity-100 transition-opacity"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M7 17l9.2-9.2M17 17V7H7" />
+                        </svg>
+                    </a>
+                    <a href="https://www.credly.com/badges/8fdf0cb8-2e8e-4cc6-a634-863996e52319/public_url"
+                        target="_blank" rel="noopener noreferrer"
+                        class="flex items-center justify-between p-6 border-b border-[var(--border)] hover:bg-white/5 transition-all group">
+                        <div>
+                            <p class="font-bold text-lg group-hover:text-[var(--accent)] transition-colors">SAP
+                                Generative AI Developer</p>
+                            <p class="text-xs opacity-50 uppercase tracking-widest">SAP | 2025</p>
+                        </div>
+                        <svg class="opacity-0 group-hover:opacity-100 transition-opacity"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M7 17l9.2-9.2M17 17V7H7" />
+                        </svg>
+                    </a>
+
+                    <a href="https://partner.skills.google/public_profiles/64e72a92-eb00-4fa2-a862-71870389e51e/badges/8244501"
+                        target="_blank" rel="noopener noreferrer"
+                        class="flex items-center justify-between p-6 border-b border-[var(--border)] hover:bg-white/5 transition-all group">
+                        <div>
+                            <p class="font-bold text-lg group-hover:text-[var(--accent)] transition-colors">Build and
+                                Deploy ML Solutions on Vertex AI</p>
+                            <p class="text-xs opacity-50 uppercase tracking-widest">Google Cloud Skills Boost | 2024</p>
+                        </div>
+                        <svg class="opacity-0 group-hover:opacity-100 transition-opacity"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M7 17l9.2-9.2M17 17V7H7" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Education Card -->
+                <div class="glass p-12 flex flex-col justify-between reveal" style="transition-delay: 0.2s">
+                    <div>
+                        <h3 class="text-xs font-bold uppercase tracking-widest opacity-40 mb-10">Academic Foundation
+                        </h3>
+                        <div class="space-y-12">
+                            <div>
+                                <p class="text-3xl font-bold mb-2">M.Sc. Data Science</p>
+                                <p class="text-[var(--accent)] font-bold">Pontificia Universidad Católica de Chile</p>
+                                <p class="text-sm opacity-50">Santiago, CL | 2025</p>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold mb-2">B.Sc. Systems Engineering</p>
+                                <p class="text-[var(--accent)] font-bold">Universidad Mayor de San Simón</p>
+                                <p class="text-sm opacity-50">Cochabamba, BO | 2020</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Life Beyond the Code (New Name & UI) -->
+    <section id="life" class="bg-[var(--bg-secondary)] rounded-[4rem] my-10">
+        <div class="w-full">
+            <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+                <h2 class="text-5xl md:text-7xl font-bold mb-6">Life Beyond the <span
+                        style="color: var(--accent)">Code</span></h2>
+                <p class="opacity-60 text-lg leading-relaxed" data-lang="en">Insights into the perspectives and passions
+                    that balance my technical life.</p>
+                <p class="opacity-60 text-lg leading-relaxed" data-lang="es">Perspectivas y pasiones que equilibran mi
+                    vida técnica.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Perspective 1: Community -->
+                <div class="perspective-card reveal group">
+                    <div class="relative overflow-hidden rounded-[2.5rem] mb-6">
+                        <!-- <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80&w=800" -->
+                        <img src="assets/images/hackathon.jpg" alt="Tech Community" class="perspective-img">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[var(--navy-deep)] to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3 flex items-center gap-3">
+                        <span data-lang="en">Community</span><span data-lang="es">Comunidad</span>
+                    </h4>
+                    <p class="opacity-60 text-sm leading-relaxed" data-lang="en">Fostering AI growth in LATAM through
+                        mentorship and hackathons. I believe in technology as a regional equalizer.</p>
+                    <p class="opacity-60 text-sm leading-relaxed" data-lang="es">Impulsando el crecimiento de la IA en
+                        LATAM mediante mentorías y hackathons. Creo en la tecnología como igualador regional.</p>
+                </div>
+
+                <!-- Perspective 2: Hiking -->
+                <div class="perspective-card reveal group" style="transition-delay: 0.1s">
+                    <div class="relative overflow-hidden rounded-[2.5rem] mb-6">
+                        <img src="assets/images/cerro.jpg" alt="Hiking" class="perspective-img">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[var(--navy-deep)] to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3 flex items-center gap-3">
+                        <span data-lang="en">Outdoors</span><span data-lang="es">Montañismo</span>
+                    </h4>
+                    <p class="opacity-60 text-sm leading-relaxed" data-lang="en">Seeking clarity in the mountains. Long
+                        trails are where I solve the most complex architectural puzzles.</p>
+                    <p class="opacity-60 text-sm leading-relaxed" data-lang="es">Buscando claridad en las montañas. Los
+                        senderos largos son donde resuelvo los puzzles arquitectónicos más complejos.</p>
+                </div>
+
+                <!-- Perspective 3: Cats -->
+                <div class="perspective-card reveal group" style="transition-delay: 0.2s">
+                    <div class="relative overflow-hidden rounded-[2.5rem] mb-6">
+                        <!-- <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&q=80&w=800" -->
+                        <img src="assets/images/gato.jpg" alt="Cats" class="perspective-img">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[var(--navy-deep)] to-transparent opacity-60">
+                        </div>
+                    </div>
+                    <h4 class="text-2xl font-bold mb-3 flex items-center gap-3">
+                        <span data-lang="en">Feline Muse</span><span data-lang="es">Musa Felina</span>
+                    </h4>
+                    <p class="opacity-60 text-sm leading-relaxed" data-lang="en">My silent coworkers. Their poise and
+                        focus during late-night coding sessions are my best productivity tool.</p>
+                    <p class="opacity-60 text-sm leading-relaxed" data-lang="es">Mis compañeros silenciosos. Su enfoque
+                        durante las sesiones nocturnas de código son mi mejor herramienta de productividad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <!-- <footer id="contact" class="py-32 px-8 text-center">
+        <div class="max-w-4xl mx-auto reveal">
+            <h2 class="text-5xl md:text-8xl font-bold mb-12">Let's <span style="color: var(--accent)">Build</span>.</h2>
+            <div class="flex flex-wrap justify-center gap-6 mb-20">
+                <a href="mailto:cusi.evelyn@gmail.com"
+                    class="btn-accent px-14 py-6 font-bold text-lg">cusi.evelyn@gmail.com</a>
+                <a href="https://linkedin.com/in/evelyn-cusi-lopez" target="_blank"
+                    class="glass px-14 py-6 font-bold text-lg hover:border-[var(--accent)] transition-all">LinkedIn</a>
+            </div>
+            <p class="text-[10px] uppercase font-bold tracking-[0.5em] opacity-30">© 2026 Evelyn Cusi López •
+                Architecting Intelligence</p>
+        </div>
+    </footer> -->
+
+
+    <!-- Footer / Contact Section (Actualizada con formulario) -->
+    <footer id="contact" class="py-32 px-8 border-t border-white/5 bg-[var(--bg-secondary)]">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+            <div class="reveal text-left">
+                <h2 class="text-5xl md:text-7xl font-bold mb-8">Let's <span
+                        style="color: var(--accent)">Collaborate</span>.</h2>
+                <p class="text-xl opacity-70 mb-12 max-w-md font-light">
+                    <span data-lang="en">I'm always open to discussing technical leadership, production AI challenges,
+                        or innovative data products.</span>
+                    <span data-lang="es">Siempre estoy abierta a discutir liderazgo técnico, desafíos de IA en
+                        producción o productos de datos innovadores.</span>
+                </p>
+                <div class="flex gap-6">
+                    <a href="https://linkedin.com/in/evelyn-cusi-lopez" target="_blank"
+                        class="glass w-14 h-14 flex items-center justify-center hover:border-[var(--accent)] transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:cusi.evelyn@gmail.com"
+                        class="glass w-14 h-14 flex items-center justify-center hover:border-[var(--accent)] transition-all">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Formulario de Contacto (Usa Formspree) -->
+            <div class="glass p-8 md:p-12 reveal">
+                <form action="https://formspree.io/f/mojndagd" method="POST" class="space-y-6">
+                    <div>
+                        <input type="text" name="name" required placeholder="Name / Nombre">
+                    </div>
+                    <div>
+                        <input type="email" name="email" required placeholder="Email / Correo">
+                    </div>
+                    <div>
+                        <textarea name="message" rows="4" required placeholder="Message / Mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn-accent w-full py-4 font-bold text-sm tracking-widest uppercase">
+                        <span data-lang="en">Send Message</span><span data-lang="es">Enviar Mensaje</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-24 pt-8 border-t border-white/5 opacity-30 text-[10px] uppercase tracking-[0.5em] text-center">
+            © 2026 Evelyn Cusi López • Engineered for Impact
+        </div>
+    </footer>
+
+    <!-- Experience Modal -->
+    <div id="modal-container"
+        class="modal fixed inset-0 z-[2000] hidden bg-[var(--modal-overlay)] backdrop-blur-md items-center justify-center p-6"
+        onclick="closeModal()">
+        <div class="glass modal-glass max-w-2xl w-full p-12 relative overflow-y-auto max-h-[85vh]"
+            onclick="event.stopPropagation()">
+            <button onclick="closeModal()"
+                class="absolute top-8 right-8 text-2xl opacity-40 hover:opacity-100 transition-all">✕</button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+
+    <!-- Experience Modal -->
+    <!-- <div id="modal-container"
+        class="modal fixed inset-0 z-[2000] hidden bg-black/90 backdrop-blur-md items-center justify-center p-6"
+        onclick="closeModal()">
+        <div class="glass max-w-2xl w-full p-12 relative overflow-y-auto max-h-[85vh]"
+            onclick="event.stopPropagation()">
+            <button onclick="closeModal()"
+                class="absolute top-8 right-8 text-2xl opacity-40 hover:opacity-100 transition-all">✕</button>
+            <div id="modal-content"></div>
+        </div>
+    </div> -->
+
+
+    <script>
+        let currentLang = 'en';
+        let currentIndex = 0;
+        const track = document.getElementById('impactTrack');
+        const cards = Array.from(track.children);
+
+        // Clone cards for infinite effect
+        function setupCarousel() {
+            const visibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+
+            // Clear existing clones if any
+            while (track.querySelectorAll('.clone').length > 0) {
+                track.querySelector('.clone').remove();
+            }
+
+            // Clone start cards and end cards
+            for (let i = 0; i < visibleCards; i++) {
+                const startClone = cards[i].cloneNode(true);
+                startClone.classList.add('clone');
+                track.appendChild(startClone);
+
+                const endClone = cards[cards.length - 1 - i].cloneNode(true);
+                endClone.classList.add('clone');
+                track.insertBefore(endClone, track.firstChild);
+            }
+
+            currentIndex = visibleCards;
+            updateCarousel(false);
+        }
+
+        function moveCarousel(dir) {
+            const visibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            currentIndex += dir;
+            updateCarousel(true);
+
+            // Cyclic jump logic
+            track.addEventListener('transitionend', () => {
+                if (currentIndex >= cards.length + visibleCards) {
+                    currentIndex = visibleCards;
+                    updateCarousel(false);
+                }
+                if (currentIndex < visibleCards) {
+                    currentIndex = cards.length + visibleCards - 1;
+                    updateCarousel(false);
+                }
+            }, { once: true });
+        }
+
+        function updateCarousel(animate) {
+            const visibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            const gap = 32; // 2rem
+            const containerWidth = track.parentElement.offsetWidth;
+            const cardWidth = (containerWidth - (visibleCards - 1) * gap) / visibleCards;
+
+            track.style.transition = animate ? 'transform 0.5s ease-in-out' : 'none';
+            track.style.transform = `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+        }
+
+        const experiences = {
+            'exp-datec': {
+                title: "Lead AI Engineer & Data Scientist @ Datec",
+                bodyEn: "• Led production AI systems delivery.<br>• Automated 90% manual processing via GCP/YOLOX/OCR/LLMs.<br>• Forecasting for 500+ SKUs on Databricks.<br>• Enterprise RAG platforms.",
+                bodyEs: "• Liderazgo en IA en producción.<br>• Automatización del 90% mediante GCP/YOLOX/OCR/LLMs.<br>• Predicción para +500 SKUs en Databricks.<br>• Plataformas RAG corporativas."
+            },
+            'exp-p44': {
+                title: "Data Scientist @ Project44",
+                bodyEn: "• Improved ETA accuracy by 21%.<br>• Custom Snowflake Geospatial solutions.<br>• GPS anomaly detection pipelines.",
+                bodyEs: "• Mejora de precisión ETA en 21%.<br>• Soluciones geoespaciales en Snowflake.<br>• Pipelines de detección de anomalías GPS."
+            },
+            'exp-semantics': {
+                title: "Software Engineer @ Semantics S.R.L.",
+                bodyEn: "• Scalable backend systems and automation tools.<br>• Algorithmic solutions.<br>• Engineering practices: TDD, Scrum, clean code.<br>• Strong technical foundation for production ML/AI systems.",
+                bodyEs: "• Backend y herramientas de automatización escalables.<br>• Soluciones algorítmicas.<br>• Prácticas de ingeniería: TDD, Scrum, clean code.<br>• Sólida base técnica para sistemas de ML/IA en producción."
+            }
+        };
+
+        function toggleLang() {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
+            document.body.className = `lang-${currentLang}`;
+            document.getElementById('lang-label').innerText = currentLang === 'en' ? 'ES' : 'EN';
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = el.getAttribute('data-lang') === currentLang ? 'inline' : 'none';
+            });
+        }
+
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            document.documentElement.classList.toggle('light');
+        }
+
+        function openModal(id) {
+            const exp = experiences[id];
+            const content = document.getElementById('modal-content');
+            content.innerHTML = `<h3 class="text-4xl font-bold mb-8 text-[var(--accent)]">${exp.title}</h3>
+                                <div class="opacity-80 leading-relaxed text-lg font-light">${currentLang === 'en' ? exp.bodyEn : exp.bodyEs}</div>`;
+            document.getElementById('modal-container').classList.remove('hidden');
+            document.getElementById('modal-container').classList.add('flex');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal-container');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        window.onscroll = () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) nav.classList.add('bg-[var(--bg-primary)]', 'bg-opacity-80', 'backdrop-blur-md', 'border-white/5');
+            else nav.classList.remove('bg-[var(--bg-primary)]', 'bg-opacity-80', 'backdrop-blur-md', 'border-white/5');
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('active');
+            });
+        };
+
+        window.addEventListener('resize', () => {
+            setupCarousel();
+        });
+
+        window.onload = () => {
+            setupCarousel();
+            toggleLang();
+            window.onscroll();
+        };
+    </script>
+
+    <!-- <script>
+        let currentLang = 'en';
+
+        // Modal Data for Experience
+        const experiences = {
+            'exp-datec': {
+                title: "Lead AI Engineer & Data Scientist @ Datec",
+                bodyEn: "• Led delivery of production AI systems.<br>• Document Extraction: YOLOX, OCR, LLMs on GCP. 90% automation, 75% cost reduction.<br>• Demand Forecasting: 500+ SKUs on Databricks with MLflow.<br>• Multi-agent LLM systems for enterprise automation.",
+                bodyEs: "• Liderazgo en sistemas de IA en producción.<br>• Extracción Documental: YOLOX, OCR, LLMs en GCP. 90% automatización, 75% reducción costos.<br>• Predicción de Demanda: +500 SKUs en Databricks con MLflow.<br>• Sistemas LLM multi-agente para automatización corporativa."
+            },
+            'exp-p44': {
+                title: "Data Scientist @ Project44",
+                bodyEn: "• Improved logistics ETA accuracy by 21% using real-time GPS cleansing.<br>• Custom Snowflake Geospatial solution replacing high-cost external APIs.<br>• End-to-end data lifecycle management for maritime and land visibility.",
+                bodyEs: "• Mejora de precisión ETA logística en 21% usando limpieza GPS en tiempo real.<br>• Solución propia en Snowflake reemplazando APIs externas costosas.<br>• Gestión del ciclo de vida de datos para visibilidad marítima y terrestre."
+            },
+            'exp-semantics': {
+                title: "Software Engineer @ Semantics",
+                bodyEn: "• Engineered backend for scalable enterprise tools.<br>• Applied Agile/TDD practices to algorithmic solutions.<br>• Built genetic algorithms and custom data structures for optimized search.",
+                bodyEs: "• Ingeniería backend para herramientas empresariales escalables.<br>• Aplicación de Agile/TDD a soluciones algorítmicas.<br>• Construcción de algoritmos genéticos y estructuras de datos optimizadas."
+            }
+        };
+
+        function toggleLang() {
+            currentLang = currentLang === 'en' ? 'es' : 'en';
+            document.body.className = `lang-${currentLang}`;
+            document.getElementById('lang-label').innerText = currentLang === 'en' ? 'ES' : 'EN';
+            updateLangDisplay();
+        }
+
+        function updateLangDisplay() {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                el.style.display = el.getAttribute('data-lang') === currentLang ? 'inline' : 'none';
+            });
+        }
+
+        function toggleTheme() {
+            document.documentElement.classList.toggle('dark');
+            document.documentElement.classList.toggle('light');
+        }
+
+        function openModal(id) {
+            const exp = experiences[id];
+            const content = document.getElementById('modal-content');
+            content.innerHTML = `
+                <h3 class="text-3xl font-bold mb-8 text-[var(--accent)]">${exp.title}</h3>
+                <div class="opacity-80 leading-relaxed text-lg font-light">${currentLang === 'en' ? exp.bodyEn : exp.bodyEs}</div>
+            `;
+            document.getElementById('modal-container').classList.remove('hidden');
+            document.getElementById('modal-container').classList.add('flex');
+        }
+
+        function closeModal() {
+            document.getElementById('modal-container').classList.add('hidden');
+            document.getElementById('modal-container').classList.remove('flex');
+        }
+
+        // Scroll Observer
+        window.onscroll = () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-[var(--bg-primary)]', 'bg-opacity-80', 'backdrop-blur-md', 'border-white/5');
+            } else {
+                nav.classList.remove('bg-[var(--bg-primary)]', 'bg-opacity-80', 'backdrop-blur-md', 'border-white/5');
+            }
+
+            document.querySelectorAll('.reveal').forEach(el => {
+                if (el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('active');
+            });
+        };
+
+        window.onload = () => {
+            updateLangDisplay();
+            window.onscroll();
+        };
+
+        let currentIndex = 0;
+        const track = document.getElementById('impactTrack');
+        const cards = Array.from(track.children);
+
+        // Clone cards for infinite effect
+        function setupCarousel() {
+            const visibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+
+            // Clear existing clones if any
+            while (track.querySelectorAll('.clone').length > 0) {
+                track.querySelector('.clone').remove();
+            }
+
+            // Clone start cards and end cards
+            for (let i = 0; i < visibleCards; i++) {
+                const startClone = cards[i].cloneNode(true);
+                startClone.classList.add('clone');
+                track.appendChild(startClone);
+
+                const endClone = cards[cards.length - 1 - i].cloneNode(true);
+                endClone.classList.add('clone');
+                track.insertBefore(endClone, track.firstChild);
+            }
+
+            currentIndex = visibleCards;
+            updateCarousel(false);
+        }
+
+        function moveCarousel(dir) {
+            const visibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            currentIndex += dir;
+            updateCarousel(true);
+
+            // Cyclic jump logic
+            track.addEventListener('transitionend', () => {
+                if (currentIndex >= cards.length + visibleCards) {
+                    currentIndex = visibleCards;
+                    updateCarousel(false);
+                }
+                if (currentIndex < visibleCards) {
+                    currentIndex = cards.length + visibleCards - 1;
+                    updateCarousel(false);
+                }
+            }, { once: true });
+        }
+
+        function updateCarousel(animate) {
+            const visibleCards = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
+            const gap = 32; // 2rem
+            const containerWidth = track.parentElement.offsetWidth;
+            const cardWidth = (containerWidth - (visibleCards - 1) * gap) / visibleCards;
+
+            track.style.transition = animate ? 'transform 0.5s ease-in-out' : 'none';
+            track.style.transform = `translateX(-${currentIndex * (cardWidth + gap)}px)`;
+        }
+    </script> -->
 </body>
-</html> 
 
+</html>
