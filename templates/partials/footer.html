@@ -1,0 +1,57 @@
+<!-- Footer / Contact Section (Actualizada con formulario) -->
+<footer id="contact" class="py-32 px-8 border-t border-white/5 bg-[var(--bg-secondary)]">
+    <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
+        <div class="reveal text-left">
+            <h2 class="text-5xl md:text-7xl font-bold mb-8">Let's <span style="color: var(--accent)">Collaborate</span>.
+            </h2>
+            <p class="text-xl opacity-70 mb-12 max-w-md font-light">
+                <span data-lang="en">I'm always open to discussing technical leadership, production AI challenges,
+                    or innovative data products.</span>
+                <span data-lang="es">Siempre estoy abierta a discutir liderazgo técnico, desafíos de IA en
+                    producción o productos de datos innovadores.</span>
+            </p>
+            <div class="flex gap-6">
+                <a href="https://linkedin.com/in/evelyn-cusi-lopez" target="_blank"
+                    class="glass w-14 h-14 flex items-center justify-center hover:border-[var(--accent)] transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                        </path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="mailto:cusi.evelyn@gmail.com"
+                    class="glass w-14 h-14 flex items-center justify-center hover:border-[var(--accent)] transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                        </path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Formulario de Contacto (Usa Formspree) -->
+        <div class="glass p-8 md:p-12 reveal">
+            <form action="https://formspree.io/f/mojndagd" method="POST" class="space-y-6">
+                <div>
+                    <input type="text" name="name" required placeholder="Name / Nombre">
+                </div>
+                <div>
+                    <input type="email" name="email" required placeholder="Email / Correo">
+                </div>
+                <div>
+                    <textarea name="message" rows="4" required placeholder="Message / Mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn-accent w-full py-4 font-bold text-sm tracking-widest uppercase">
+                    <span data-lang="en">Send Message</span><span data-lang="es">Enviar Mensaje</span>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="mt-24 pt-8 border-t border-white/5 opacity-30 text-[10px] uppercase tracking-[0.5em] text-center">
+        © 2026 Evelyn Cusi López • Engineered for Impact
+    </div>
+</footer>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ profile.name }} | {{ profile.title[lang] }}</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="lang-{{ lang }}">
+
+    {% include "partials/navbar.html" %}
+    {% include "partials/hero.html" %}
+    {% include "partials/experience.html" %}
+    {% include "partials/impact.html" %}
+    {% include "partials/skills.html" %}
+    {% include "partials/certifications.html" %}
+    {% include "partials/life.html" %}
+    {% include "partials/footer.html" %}
+    {% include "partials/modal.html" %}
+
+    <script>
+        window.__EXPERIENCE_DATA__ = {{ experiences | tojson }};
+        window.__PROFILE_DATA__ = {{ profile | tojson }};
+        window.__PROJECTS_DATA__ = {{ projects | tojson }};
+        window.__LANG__ = "{{ lang }}";
+    </script>
+    <script src="assets/js/app.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<!-- Experience Modal -->
+<div id="modal-container"
+    class="modal fixed inset-0 z-[2000] hidden bg-[var(--modal-overlay)] backdrop-blur-md items-center justify-center p-6"
+    onclick="closeModal()">
+    <div class="glass modal-glass max-w-2xl w-full p-12 relative overflow-y-auto max-h-[85vh]"
+        onclick="event.stopPropagation()">
+        <button onclick="closeModal()"
+            class="absolute top-8 right-8 text-2xl opacity-40 hover:opacity-100 transition-all">✕</button>
+        <div id="modal-content"></div>
+    </div>
+</div>

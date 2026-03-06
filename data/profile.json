@@ -1,0 +1,20 @@
+{
+    "name": "Evelyn Cusi López",
+    "title": {
+        "es": "Data Scientist / AI Engineer",
+        "en": "Data Scientist / AI Engineer"
+    },
+    "subtitle": {
+        "es": "Me especializo en construir sistemas de IA listos para producción que impulsan resultados de negocio reales.",
+        "en": "I specialize in building production-ready AI systems that drive real business results."
+    },
+    "location": "Bolivia",
+    "email": "cusi.evelyn@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/evelyn-cusi-lopez",
+    "github": "https://github.com/Lin777",
+    "cv_drive": "https://drive.google.com/file/d/14677F15ukAgBvAIbayIFWmPzbnL0IvQn/view?usp=drive_link",
+    "cta": {
+        "es": "Ver proyectos",
+        "en": "View projects"
+    }
+}

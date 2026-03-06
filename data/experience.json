@@ -1,0 +1,102 @@
+[
+    {
+        "id": "exp-datec",
+        "company": "Datec LATAM - D4G",
+        "role": {
+            "es": "Lead AI Engineer & Data Scientist",
+            "en": "Lead AI Engineer & Data Scientist"
+        },
+        "period": {
+            "es": "2023 - 2025",
+            "en": "2023 - 2025"
+        },
+        "location": {
+            "es": "Bolivia",
+            "en": "Bolivia"
+        },
+        "description": {
+            "es": "Liderando el diseño y la entrega de sistemas de IA en producción. Desde pipelines de Document AI hasta plataformas RAG para más de 300 usuarios.",
+            "en": "Leading the design and delivery of production AI systems. From Document AI pipelines to enterprise RAG platforms serving 300+ users."
+        },
+        "highlights": {
+            "en": [
+                "Led production AI systems delivery.",
+                "Automated 90% manual processing via GCP/YOLOX/OCR/LLMs.",
+                "Forecasting for 500+ SKUs on Databricks.",
+                "Enterprise RAG platforms."
+            ],
+            "es": [
+                "Liderazgo en IA en producción.",
+                "Automatización del 90% mediante GCP/YOLOX/OCR/LLMs.",
+                "Predicción para +500 SKUs en Databricks.",
+                "Plataformas RAG corporativas."
+            ]
+        }
+    },
+    {
+        "id": "exp-p44",
+        "company": "Project44",
+        "role": {
+            "es": "Data Scientist",
+            "en": "Data Scientist"
+        },
+        "period": {
+            "es": "2021 - 2023",
+            "en": "2021 - 2023"
+        },
+        "location": {
+            "es": "Alemania",
+            "en": "Germany"
+        },
+        "description": {
+            "es": "Optimización de visibilidad logística global. Mejora de la precisión de ETA en un 21% y reemplazo de APIs costosas por soluciones geoespaciales propias.",
+            "en": "Optimized global logistics visibility. Improved ETA accuracy by 21% and replaced high-cost APIs with in-house geospatial solutions."
+        },
+        "highlights": {
+            "en": [
+                "Improved ETA accuracy by 21%.",
+                "Custom Snowflake Geospatial solutions.",
+                "GPS anomaly detection pipelines."
+            ],
+            "es": [
+                "Mejora de precisión ETA en 21%.",
+                "Soluciones geoespaciales en Snowflake.",
+                "Pipelines de detección de anomalías GPS."
+            ]
+        }
+    },
+    {
+        "id": "exp-semantics",
+        "company": "Semantics S.R.L.",
+        "role": {
+            "es": "Software Engineer",
+            "en": "Software Engineer"
+        },
+        "period": {
+            "es": "2018 - 2021",
+            "en": "2018 - 2021"
+        },
+        "location": {
+            "es": "Bolivia",
+            "en": "Bolivia"
+        },
+        "description": {
+            "es": "Construyendo la base de sistemas escalables. Enfocada en herramientas backend, algoritmos genéticos y prácticas Agile/TDD.",
+            "en": "Building the foundation of scalable systems. Focused on backend tools, genetic algorithms, and Agile/TDD practices."
+        },
+        "highlights": {
+            "en": [
+                "Scalable backend systems and automation tools.",
+                "Algorithmic solutions.",
+                "Engineering practices: TDD, Scrum, clean code.",
+                "Strong technical foundation for production ML/AI systems."
+            ],
+            "es": [
+                "Backend y herramientas de automatización escalables.",
+                "Soluciones algorítmicas.",
+                "Prácticas de ingeniería: TDD, Scrum, clean code.",
+                "Sólida base técnica para sistemas de ML/IA en producción."
+            ]
+        }
+    }
+]

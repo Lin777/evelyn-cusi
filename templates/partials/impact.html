@@ -1,0 +1,51 @@
+<section id="impact">
+    <div class="w-full">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 reveal">
+            <div>
+                <h2 class="text-5xl md:text-7xl font-bold mb-4">Featured <span
+                        style="color: var(--accent)">Impact</span></h2>
+                <p class="opacity-50 text-xl font-light">Production-grade solutions that drive measurable business
+                    value.</p>
+            </div>
+            <div class="flex gap-4">
+                <button onclick="moveCarousel(-1)"
+                    class="w-14 h-14 glass rounded-full flex items-center justify-center hover:border-[var(--accent)] group transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" class="opacity-40 group-hover:opacity-100">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+                <button onclick="moveCarousel(1)"
+                    class="w-14 h-14 glass rounded-full flex items-center justify-center hover:border-[var(--accent)] group transition-all">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" class="opacity-40 group-hover:opacity-100">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="carousel-container">
+            <div class="carousel-track" id="impactTrack">
+                {% for project in projects %}
+                <div class="impact-card glass p-10 flex flex-col justify-between reveal">
+                    <div>
+                        <span class="text-[10px] font-bold uppercase tracking-widest text-[var(--accent)] mb-4 block">
+                            {{ project.category[lang] if project.category is mapping else project.category }}
+                        </span>
+                        <h4 class="text-2xl font-bold mb-6">{{ project.title[lang] }}</h4>
+                        <p class="text-sm opacity-60 mb-8" data-lang="en">{{ project.description.en }}</p>
+                        <p class="text-sm opacity-60 mb-8" data-lang="es">{{ project.description.es }}</p>
+                    </div>
+                    <div class="pt-8 border-t border-white/5 flex justify-between items-end">
+                        <div class="text-4xl font-extrabold text-[var(--accent)]">{{ project.metric.value }}</div>
+                        <div class="text-[9px] uppercase font-bold opacity-40">
+                            {{ project.metric.label[lang] }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

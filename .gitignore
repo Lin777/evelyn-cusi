@@ -1,0 +1,17 @@
+# Entorno virtual
+venv/
+.venv/
+env/
+
+# Archivos Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos que comienzan con index_
+index_*
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
