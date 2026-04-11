@@ -61,7 +61,7 @@ window.__LANG__
 - `assets/js/app.js` — handles bilingual language switching, infinite carousel (impact section), and modal logic; reads from the `window.__*_DATA__` globals injected at build time
 - `assets/css/styles.css` — custom styles; Tailwind CSS is loaded via CDN in the template
 
-Files under `assets/js/typed.js`, `assets/less/`, and `assets/plugins/` are unused remnants from a previous version.
+The only active files under `assets/` are `css/styles.css`, `js/app.js`, and the images referenced in the templates (`favicon.ico`, `evelyn_cusi.jpeg`, `hackathon.jpg`, `cerro.jpg`, `gato.jpg`).
 
 ### Bilingualism
 
